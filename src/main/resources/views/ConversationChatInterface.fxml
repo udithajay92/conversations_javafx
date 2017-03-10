@@ -37,15 +37,27 @@
                   <!--
                   <Button fx:id="buttonSend" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="140.0" scaleShape="false" text="Send" textAlignment="CENTER" HBox.hgrow="NEVER" />
                   -->
-                  <Button fx:id="buttonSend" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="140.0" scaleShape="false" text="" textAlignment="CENTER" HBox.hgrow="NEVER">
+                  <Button fx:id="buttonSend" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="43.0" scaleShape="false" text="" textAlignment="CENTER" HBox.hgrow="NEVER">
                      <graphic>
                         <ImageView fx:id="sendTextImageView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/send_text.png" />
                            </image>
                         </ImageView>
-                     </graphic></Button>
-                  <Button fx:id="recordBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false">
+                     </graphic>
+                  </Button>
+
+                  <Button fx:id="buttonSendImage" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="43.0" scaleShape="false" text="" textAlignment="CENTER" HBox.hgrow="NEVER">
+                     <graphic>
+                        <ImageView fx:id="sendImageImageView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/send_file.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+
+                  <Button fx:id="recordBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="43.0" scaleShape="false" text="" textAlignment="CENTER" HBox.hgrow="NEVER">
                      <graphic>
                         <ImageView fx:id="microphoneImageView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>

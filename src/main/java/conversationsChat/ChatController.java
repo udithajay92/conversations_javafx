@@ -52,21 +52,25 @@ public class ChatController implements Initializable {
     //view the online users in the side bar ----------------------------------------------------------------------------
     public void setUserList() {
 
-        User user = setOnlineUsers();
-        List<User> list = new ArrayList<User>();
-        list.add(user);
+        List<User> contactDetails = new ArrayList<User>();
 
-        ObservableList<User> users = FXCollections.observableList(list);
+        User user = setOnlineUsers("Nina Dobrev", "NinaDobrev", Status.ONLINE);
+        contactDetails.add(user);
+        user = setOnlineUsers("Maria Cotillard", "MariaCotillard", Status.BUSY);
+        contactDetails.add(user);
+
+
+        ObservableList<User> users = FXCollections.observableList(contactDetails);
         userList.setItems(users);
         userList.setCellFactory(new UserList());
-        setOnlineLabel("1");
+        setOnlineLabel(String.valueOf(contactDetails.size()));
     }
 
-    public User setOnlineUsers(){
+    public User setOnlineUsers(String name, String pistureName, Status status){
         User user = new User();
-        user.setName("Nina Dobrev");
-        user.setPicture("NinaDobrev");
-        user.setStatus(Status.ONLINE);
+        user.setName(name);
+        user.setPicture(pistureName);
+        user.setStatus(status);
 
         return  user;
     }
